@@ -8,6 +8,7 @@ https://user-images.githubusercontent.com/28188300/232335848-1f670777-bd77-433f-
 
 ### Installing
 
+1) Using QMake
 A step by step series  that tell you how to get a execute project.
 Get it from GitHub
 ```
@@ -17,6 +18,22 @@ Compile
 ```
 qmake && make
 ```
+
+2) Using CMake
+
+```
+cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+```
+```
+cd build/
+```
+```
+make -j4
+```
+```
+cp -r ../res/ .
+```
+You can copy res directory using other method ie by GUI. Next, you can play it.
 
 ## Addons
 * [SFML](https://www.sfml-dev.org/) - page of SFML project
